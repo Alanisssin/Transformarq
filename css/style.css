@@ -99,7 +99,7 @@ font-size: 1.5rem;
   margin: 0 auto;
   display: grid;
   place-content: center;
-  gap: 0px;
+  gap: 20px;
   grid-template-columns: 25% 25% 25% 25%;
   padding-bottom: 2rem;
 }
@@ -112,8 +112,8 @@ font-size: 1.5rem;
 }
 
 .image img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: contain;
 }
 
@@ -121,6 +121,8 @@ font-size: 1.5rem;
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  border: 1px solid var(--sdcolor);
+  border-radius: 10px;
 }
 
 .banner {
