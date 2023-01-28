@@ -73,10 +73,8 @@ header {
   width: 100%;
   text-align: center;
 }
-.title{
-  font-size: 3rem;
-}
-h1 {
+
+h1, .title {
   font-size: 3rem;
   color: #DFA21E;
   background-image: -webkit-linear-gradient(0deg, #DFA21E 28%,#6e2d90 85%,#03b6de 99%);
