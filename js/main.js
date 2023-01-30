@@ -17,6 +17,7 @@ $(function () {
       });
   }
 
+// Toogle Menu
 const menuButton = document.querySelector(".mobile-menu");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -35,10 +36,17 @@ menuButton.addEventListener("click", () => {
 });
 
 
+// Get copiright automatic year
 const newYear = document.getElementById("date");
-
 const updateYear = () => {
     newYear.textContent = new Date().getFullYear();
 };
-
 document.addEventListener("DOMContentLoaded", updateYear);
+
+function showStuff(id, text, btn) {
+  document.getElementById(id).style.display = 'block';
+  // hide the lorem ipsum text
+  document.getElementById(text).style.display = 'none';
+  // hide the link
+  btn.style.display = 'none';
+}
