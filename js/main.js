@@ -1,21 +1,17 @@
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-
-  function sendEmail() {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "sender@email_address.com",
-      Password: "Enter your password",
-      To: 'receiver@email_address.com',
-      From: "sender@email_address.com",
-      Subject: "Sending Email using javascript",
-      Body: "Well that was easy!!",
-    })
-      .then(function (message) {
-        alert("mail sent successfully")
-      });
-  }
+//   window.onload = function() {
+//     document.getElementById('contact-form').addEventListener('submit', function(event) {
+//         event.preventDefault();
+//         // generate a five digit number for the contact_number variable
+//         this.contact_number.value = Math.random() * 100000 | 0;
+//         // these IDs from the previous steps
+//         emailjs.sendForm('contact_service', 'contact_form', this)
+//             .then(function() {
+//                 console.log('SUCCESS!');
+//             }, function(error) {
+//                 console.log('FAILED...', error);
+//             });
+//     });
+// }
 
 // Toogle Menu
 const menuButton = document.querySelector(".mobile-menu");
@@ -50,3 +46,5 @@ function showStuff(id, text, btn) {
   // hide the link
   btn.style.display = 'none';
 }
+
+

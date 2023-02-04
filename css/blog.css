@@ -1,0 +1,38 @@
+.btn_primary{
+  width: max-content;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+section{
+    padding-top: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #313E50;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;}
+
+    input[type="text"], textarea{
+      width: 300px;
+      box-sizing: content-box;
+    height: 45px;
+    border-radius: 4px;
+    border: 2px solid #392b58;
+    padding: 0 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    outline: none;
+    }
+    
+

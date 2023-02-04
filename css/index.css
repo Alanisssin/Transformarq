@@ -1,0 +1,310 @@
+/* BANNER ------------------------------------------------------------------------*/
+.banner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../assets/img/bannerIMG.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #16141b, #7c7994, #d56a23, #630085);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  opacity: 0.3;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.text_container {
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 3em;
+  color: white;
+  font-weight: bolder;
+}
+.text_container h2 {
+  font-size: 3rem;
+}
+.text_container h3 {
+  font-style: oblique;
+  font-size: 1.5rem;
+}
+
+/* BANNER IMAGE ANIMATIONS  ------------------------------------------------------------------------*/
+.tablaoscura{
+  background-image: url("../assets/img/tabla.jpg");
+  background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container_img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#img {
+  width: 300px;
+  height: 300px;
+  animation-name: principal;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+
+#img:hover {
+  animation-play-state: paused;
+}
+
+@keyframes principal {
+  0% {
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/img/cocina_iso.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  30% {
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/img/cuarto_iso.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/img/estudio_iso.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  80% {
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/img/sala_iso.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/img/cocina_iso.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/* CARDS INFORMATION ------------------------------------------------------------------------*/
+
+.subtitle {
+  padding-top: 5em;
+  padding-left: 3em;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  gap: 5px;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.image {
+  display: grid;
+  height: auto;
+  place-content: top center;
+  padding: 1rem;
+  
+}
+
+.image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.items {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid var(--sdcolor);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px); */
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*  FAQS */
+
+.tabla{
+  height: 100vh;
+  background-image: url("../assets/img/tabla.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.faqs_container {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-heading {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #333;
+  height: 56px;
+  padding: 5px 10px 0px;
+}
+
+
+.faq-text {
+  font-size: large;
+  font-weight: 400;
+  color: #3f3f3f;
+  width: 95%;
+  margin-bottom: 30px;
+  padding: 5px 5px 5px 20px;
+}
+
+.faq {
+  width: 100%;
+  margin: 0 auto;
+  /* background: white; */
+  border-radius: 15px;
+  position: relative;
+}
+.faq label {
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  padding-right: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+ /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px); */
+border: 1px solid rgba(255, 255, 255, 0.3);
+margin: 1rem;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid rgba(0, 0, 0, 0.33);
+  border-right: 2px solid rgba(0, 0, 0, 0.33);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked + label > .flex .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.faq input[type="checkbox"]:checked + label {
+  display: block;  
+  color: #4f7351;
+  height: max-content;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  transition: 3s;
+}
+
+.faq input[type="checkbox"]:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: 60px;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 2em;
+  }
+  .faqs_container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+  .faq-heading {
+    font-weight: 400;
+    font-size: 1em;
+    padding: 5px 10px 0px;
+  }
+  .faq-text {
+    font-size: .9rem;
+  }
+}
