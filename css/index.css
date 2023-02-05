@@ -59,11 +59,11 @@
 }
 
 /* BANNER IMAGE ANIMATIONS  ------------------------------------------------------------------------*/
-.tablaoscura{
+.tablaoscura {
   background-image: url("../assets/img/tabla.jpg");
   background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container_img {
   display: flex;
@@ -151,10 +151,10 @@
   height: auto;
   place-content: top center;
   padding: 1rem;
-  
 }
 
 .image img {
+ padding: 3rem;
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: contain;
@@ -167,17 +167,15 @@
   border: 1px solid var(--sdcolor);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-/* backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px); */
-border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /*  FAQS */
 
-.tabla{
-  height: 100vh;
+.tabla {
+  height: max-content;
   background-image: url("../assets/img/tabla.jpg");
   background-size: cover;
   background-position: center center;
@@ -187,7 +185,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   width: 60%;
   margin: 0 auto;
   padding-bottom: 3rem;
-  
 }
 
 .flex {
@@ -207,7 +204,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 5px 10px 0px;
 }
 
-
 .faq-text {
   font-size: large;
   font-weight: 400;
@@ -224,6 +220,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   position: relative;
 }
+
 .faq label {
   border-radius: 15px;
   display: block;
@@ -233,14 +230,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   height: 56px;
   padding-right: 1rem;
   border-bottom: 1px solid #e1e1e1;
- /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-/* backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px); */
-border: 1px solid rgba(255, 255, 255, 0.3);
-margin: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 1rem;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
 }
 
 .faq input[type="checkbox"] {
@@ -251,9 +249,9 @@ margin: 1rem;
   margin-top: -10px;
   width: 15px;
   height: 15px;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   border-top: 2px solid rgba(0, 0, 0, 0.33);
   border-right: 2px solid rgba(0, 0, 0, 0.33);
@@ -262,27 +260,26 @@ margin: 1rem;
 }
 
 .faq input[type="checkbox"]:checked + label > .flex .faq-arrow {
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 .faq input[type="checkbox"]:checked + label {
-  display: block;  
+  display: block;
   color: #4f7351;
-  height: max-content;
-  transition: height 0.8s;
+  height: 200px;
+  overflow-y: scroll;
+  transition: height 0.8s; 
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-  transition: 3s;
 }
 
 .faq input[type="checkbox"]:not(:checked) + label {
   display: block;
-  transition: height 0.8s;
   height: 60px;
+  transition: height 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -305,6 +302,6 @@ margin: 1rem;
     padding: 5px 10px 0px;
   }
   .faq-text {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }

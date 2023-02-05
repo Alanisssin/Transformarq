@@ -47,4 +47,15 @@ function showStuff(id, text, btn) {
   btn.style.display = 'none';
 }
 
+// HEADER CHANGE OPACITY ON SCROLL
 
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".header").addClass("header_active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".header").removeClass("header_active");
+        }
+    });
+});

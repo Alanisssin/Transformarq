@@ -19,6 +19,7 @@ body {
   min-height: 100vh;
   background-color: #c0d2e0;
   font-family: "Inter", sans-serif;
+  overflow-y: scroll;
 }
 
 li {
@@ -43,7 +44,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;  
+  z-index: 1;
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.header_active{
+  background-color: rgba( 255, 255, 255, 0.9 );
 }
 
 .nav {
