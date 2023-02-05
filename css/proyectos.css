@@ -1,9 +1,10 @@
 
 .proy{
+	z-index: 3;
 	position: fixed;
 	left: 50%;
 	transform: translate(-50%);
-	margin: 5rem auto 0;
+	margin: 64px auto 0;
 	width: 590px;
 	height: 50px;
 	background: #9c9c9c;
@@ -77,17 +78,43 @@
 	left: 470px;
 }
 
+
+.container_galeria{
+	  min-height: 100vh;
+	  display: grid;
+	  place-content: center;
+	  }
+
 .galeria {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+	margin-top: 120px;
+	--s: 300px; /* control the size */
+    --g: 10px;  /* control the gap */
+    --f: 1.5;   /* control the scale factor */
+    
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+
   }
   
-  .galeria img {
-    max-width: 400px;
-    padding: 1rem;
+  .galeria > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
     object-fit: cover;
-  }
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+    }
+    
+    .galeria img:hover{
+    filter: grayscale(0);
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+    }
 
   @media (max-width: 768px) {
 	.proy{
