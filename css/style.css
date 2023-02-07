@@ -38,6 +38,7 @@ img {
 }
 
 /* NAVBAR ------------------------------------------------------------------------*/
+
 header {
   background-color: transparent;
   opacity: 1;
@@ -52,7 +53,7 @@ header {
 }
 
 .header_active{
-  background-color: rgba( 255, 255, 255, 0.9 );
+  background-color: rgba( 255, 255, 255, 1 );
 }
 
 .nav {

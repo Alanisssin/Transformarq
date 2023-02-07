@@ -1,0 +1,31 @@
+section {
+  background-image: url("../assets/img/tabla.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem;
+}
+
+.container_bio {
+  width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: justify; 
+  border: 1px solid var(--sdcolor);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 3ch;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 5rem 0.5rem;
+  }
+  .container_bio {
+    width: 100%;
+    padding: 1rem;
+  }
+}

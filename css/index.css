@@ -287,7 +287,7 @@
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .title {
     font-size: 2em;
   }
@@ -307,10 +307,10 @@
 }
 
 
-/* .container_galeria{
+.container_galeria{
 
   margin: 64px 0 0 0 ;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     display: grid;
     place-content: center;
     }
@@ -341,4 +341,4 @@
     filter: grayscale(0);
     width:  calc(var(--s)*var(--f));
     height: calc(var(--s)*var(--f));
-    } */
+    }

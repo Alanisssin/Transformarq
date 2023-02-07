@@ -13,7 +13,7 @@ const btnretails = document.getElementById('btnretails');
 const retails = document.getElementById('retails');
 
 btntodos.onclick = function(){
-    btntodos.style.backgroundColor = '#dfa21e';
+    btntodos.style.backgroundColor = 'rgba(223, 162, 30, .5)'
     btntodos.style.borderRadius ='10px';
     cocinas.style.display = 'flex';
     btnraks.style.backgroundColor = 'transparent';
@@ -27,7 +27,7 @@ btntodos.onclick = function(){
 }
 
 btncocinas.onclick = function(){
-    btncocinas.style.backgroundColor = '#dfa21e';
+    btncocinas.style.backgroundColor = 'rgba(223, 162, 30, .5)'
     btncocinas.style.borderRadius ='10px';
     cocinas.style.display = 'flex';
     btntodos.style.backgroundColor = 'transparent';
@@ -40,7 +40,7 @@ btncocinas.onclick = function(){
 }
 
 btnraks.onclick = function(){    
-    btnraks.style.backgroundColor = '#dfa21e';
+    btnraks.style.backgroundColor = 'rgba(223, 162, 30, .5)'
     btnraks.style.borderRadius ='10px';
     raks.style.display = 'flex';
     btntodos.style.backgroundColor = 'transparent';
@@ -54,7 +54,7 @@ btnraks.onclick = function(){
 
 
 btnescritorios.onclick = function(){
-    btnescritorios.style.backgroundColor = '#dfa21e';
+    btnescritorios.style.backgroundColor = 'rgba(223, 162, 30, .5)'
     btnescritorios.style.borderRadius ='10px';
     escritorios.style.display = 'flex';
     btntodos.style.backgroundColor = 'transparent';
@@ -67,7 +67,7 @@ btnescritorios.onclick = function(){
 }
 
 btnretails.onclick = function(){
-    btnretails.style.backgroundColor = '#dfa21e';
+    btnretails.style.backgroundColor = 'rgba(223, 162, 30, .5)'
     btnretails.style.borderRadius ='10px';
     retails.style.display = 'flex';
     btntodos.style.backgroundColor = 'transparent';

@@ -18,7 +18,7 @@
 
 </head>
 
-<header name="elevator" id="elevator">
+<header name="elevator" id="elevator" class="header">
     <nav class="nav">
         <a href="../index.html" class="nav-link active">
             <img class="nav-img" src="../assets/img/transformaq.png" alt="">
@@ -42,8 +42,12 @@
 
 <body>
     <section>
+        <div class="title_blog">
+            <h2>Manual del mueblista</h2>
+            <h6>Consulta las últimas noticias sobre tendencias en muebles</h6>
+        </div>
 
-        <div class="container_formulario">
+        <!-- <div class="container_formulario">
             <form id="task-form">
                 <div class="wrapper">             
                     <label for="task-title">Title</label>
@@ -55,10 +59,10 @@
                 </div>            
                 <button id="btn-task-save" class="btn_primary">Publicar artículo</button>
             </form>
-        </div>
+        </div> -->
 
 
-        <div id="task-container"></div>
+        <div id="blog-container" class="task-container"></div>
 
         </div>
     </section>
@@ -98,10 +102,7 @@
         </div>
         <p>Todos los derechos reservados &#128293 &copy; <span id="date"></span> Transformarq.cl</p>
     </footer>
-    <!-- ELEVATOR    -->
-    <a href="#" class="botton_elevator">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
+
     <!-- WhatsApp    -->
     <a href="https://wa.me/56961038279?text=Quiero%20cotizar%20un%20mueble" class="whatsapp" target="_blank"> <i
             class="fa fa-whatsapp whatsapp-icon"></i></a>
@@ -112,7 +113,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/41ff3bb1c4.js" crossorigin="anonymous"></script>
 
-    <script type="module" src="../js/administrationblog.js"></script>
+    <script type="module" src="../js/blog.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
