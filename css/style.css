@@ -317,9 +317,7 @@ i {
     width: 70vw;
     height: 100vh;
     padding: 4rem 0;
-    background-image: url('../assets/img/marmol.jpg');
-    background-position: center center;
-    background-size: contain;
+    background-color:rgb(20, 20, 20);
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -340,7 +338,7 @@ i {
   .nav-link {
     display: block;
     margin: 0.5rem 0;
-    color: rgb(65, 65, 65) !important;
+    color: whitesmoke !important;
   }
 
   .nav-item:last-child {
