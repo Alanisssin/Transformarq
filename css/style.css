@@ -189,6 +189,7 @@ header {
 
 /* FOOTER -------------------------------------------------------------------*/
 footer {
+  margin-top: 2rem;
   bottom: 0;
   height: 340px;
   width: 100%;
@@ -316,7 +317,9 @@ i {
     width: 70vw;
     height: 100vh;
     padding: 4rem 0;
-    background-color: var(--pmcolor);
+    background-image: url('../assets/img/marmol.jpg');
+    background-position: center center;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -331,12 +334,13 @@ i {
 
   .nav-item {
     padding: 0 1.25rem !important;
+    font-size: 1.2rem;
   }
 
   .nav-link {
     display: block;
     margin: 0.5rem 0;
-    color: var(--ttcolor) !important;
+    color: rgb(65, 65, 65) !important;
   }
 
   .nav-item:last-child {

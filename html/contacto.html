@@ -11,7 +11,7 @@
         content="muebles, muebleamedida, construcción, interiordesign, carpinteria, santiago de chile, arquitectura" />
     <title>Transformarq - Muebles a medida</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
@@ -42,41 +42,30 @@
 
 <body>
     <section>
-        <div>
+        <div class="title_blog">
+            <h2>Contáctanos</h2>
+            <h6>Describenos tu idea y contactaremos contigo para realizar tu proyecto</h6>
+        </div>
+
+        <div class="container_formulario">
             <form id="contact-form">
-                <input type="hidden" name="contact_number">
-                <label>Name</label>
+                <div class="wrapper"> 
+                <label>Nombre</label>
                 <input type="text" name="user_name">
-                <label>Email</label>
+            </div>      
+            <div class="wrapper">                                 
+                <label>Correo electrónico</label>
                 <input type="email" name="user_email">
-                <label>Message</label>
-                <textarea name="message"></textarea>
-                <input type="submit" value="Send">
-            </form>
-           
+            </div>      
+            <div class="wrapper">                 
+                <label>Mensaje</label>
+                <textarea name="message" rows="3"></textarea>
+            </div>      
+            <div class="wrapper">                                 
+                <button id="btn-task-save" class="btn_primary" type="submit" value="Send">Enviar Mensaje</button>
+               
+            </form>           
 
-                <!-- <h3 id="logo">Hablanos de tu proyecto</h3>
-              
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Type in your username.." autocomplete="off" required />
-              
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password.." autocomplete="off" required />
-              
-                <a class="forgot" href="#">Forgot Password?</a>
-                <a class="register" href="#">Register</a>
-              
-                <input type="submit" name="submit" value="Log In" /> -->
-
-
-          
-
-            <!-- <div>
-                <input type="text" placeholder="Tu nombre">
-                <input type="text" placeholder="Tu numero de Telefono">
-                <input type="text" placeholder="Tu Localidad">
-                <input type="text" placeholder="Cuentanos un poco sobre tu proyecto">
-            </div> -->
         </div>
     </section>
     <a class="ir-arriba" javascript:void(0) title="Volver arriba">
